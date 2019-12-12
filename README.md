@@ -5,9 +5,8 @@ See [Readme-default](https://t4guw.github.io/www/README-default) on how to edit 
 
 ## Projects
 
-- CS Education
-
-- Bag of Tricks
+### CS Education
+### Bag of Tricks
 
 ## People
 
@@ -28,11 +27,11 @@ Members:
 
 ## Resources
 
-- UW Groups/Mailing List: https://groups.uw.edu/group/u_pisan_t4g To subscribe, email: u_pisan_t4g+subscribe@uw.edu 
-- Google Drive: https://drive.google.com/drive/u/2/folders/0AITcbPYf1Z0lUk9PVA or http://bit.ly/uwt4g 
-- GitHub: https://github.com/t4guw
-- GitHub Based Public Web Page: https://t4guw.github.io/www/
-- Discord: https://discordapp.com/channels/358309182140710912/651215245502578703
+- [UW Groups/Mailing List](https://groups.uw.edu/group/u_pisan_t4g). To subscribe, email: u_pisan_t4g+subscribe@uw.edu 
+- [Google Drive](https://drive.google.com/drive/u/2/folders/0AITcbPYf1Z0lUk9PVA)  or [http://bit.ly/uwt4g](http://bit.ly/uwt4g)
+- [GitHub](https://github.com/t4guw)
+- [GitHub Based Public Web Page](https://t4guw.github.io/www/)
+- [Discord](https://discordapp.com/channels/358309182140710912/651215245502578703) 
 
 
 
