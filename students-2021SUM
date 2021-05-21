@@ -1,0 +1,34 @@
+<h2><b><i class="mr-2"></i>2021 Spring</b></h2>
+<div class="name-container">
+    <div id="name" align="center">
+        <img src="img-students/erica-ferguson.jpeg" alt="erica-ferguson.jpeg" height="100">
+        <div class="caption">
+            <a href="https://www.linkedin.com/in/erica-m-ferguson/">Erica Ferguson</a>
+        </div>
+    </div>
+    <div id="name" align="center">
+        <img src="img-students/noimage.jpeg" alt="isabel-giang.jpeg" height="100">
+        <div class="caption">
+            <a href="https://www.linkedin.com/in/isabel-giang/">Isabel Giang</a>
+        </div>
+    </div>
+    <div id="name" align="center">
+        <img src="img-students/sonlam-nguyen.jpeg" alt="sonlam-nguyen.jpeg" height="100">
+        <div class="caption">
+            <a href="https://www.linkedin.com/in/sonlamnguyen/">Sonlam Nguyen</a>
+        </div>
+    </div>
+    <div id="name" align="center">
+        <img src="img-students/jacob-pierce.jpeg" alt="jacob-pierce.jpeg" height="100">
+        <div class="caption">
+            <a href="https://www.linkedin.com/in/jpierce2626/">Jacob Pierce</a>
+        </div>
+    </div>
+    <div id="name" align="center">
+        <img src="img-students/scott-shirley.jpeg" alt="scott-shirley.jpeg" height="100">
+        <div class="caption">
+            <a href="https://www.linkedin.com/in/scottin3d/">Scott Shirley</a>
+        </div>
+    </div>
+</div>
+</div>
