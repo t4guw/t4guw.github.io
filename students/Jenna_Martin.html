@@ -1,59 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Jenna Martin</title>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Jenna Martin</title>
 
-</head>
+  </head>
+  <header class="hero-image">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/T4G-Logo.png" alt="T4G logo">
+      </a>
+      <!--toggler navbar for small size screens-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+      <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/capstone.html">Capstone</a></li>
+          <li class="nav-item"><a class="nav-link" href="/students.html">Students</a></li>
+          <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a> </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <div id="student-page" class="container">
 
 
-<h1>Automation Framework Development and System Integrations</h1>
+    <h1>Automation Framework Development and System Integrations</h1>
 
-<img src="../img-students/jenna-martin.jpeg" alt="student picture" width="100" height="100" align="left"
-  style="vertical-align:middle;margin:5px">
+    <img src="../img-students/jenna-martin.jpeg" alt="student picture" width="100" height="100" align="left"
+         style="vertical-align:middle;margin:5px">
 
-<h2>Jenna Martin</h2>
+    <h2>Jenna Martin</h2>
 
-<p>
-  <strong>Contact:</strong> <a href="https://www.linkedin.com/in/jennamartin90">LinkedIn</a>
-</p>
-<p>
-  The primary goal of this Capstone project was to participate in infrastructure development and develop the core
-  automation framework for two web applications offered by MediaPRO. Before working for MediaPRO, the organization
-  primarily relied on black-box manual testing strategies and I was tasked with creating structure and standardizing the
-  test suite and then implementing the basic acceptance and regression tests into the automation development so that
-  staging testing and production validation could be performed more efficiently.
-</p>
-<p>
-  Using the software development lifecycle, I gathered requirements from our product and engineering department to
-  define the basic acceptance and regression test cases. In the planning stage, I mapped out the applications with
-  concept diagrams and decided to implement a dynamic approach to locate individual user interface objects, create
-  functions that test each object, and scripts that run the tests for each segment of the web application. This allows
-  the automation framework to be highly cohesive and loosely coupled so end-to-end testing can be performed or a user
-  can elect to run individual tests. In applying this design, I have located the majority of the elements within each
-  application and created functions to test these elements, which allowed me to concurrently develop and code the
-  framework.
-</p>
-<p>
-  Another facet of my Capstone project was to expand my skill sets to other crucial roles in engineering, including
-  Developer Operations (DevOps) and acting as a liaison for Support to escalate customer requests so that I could assist
-  or document potential bugs within our product line. As a DevOps engineer, I automated the process workflow for
-  customers requesting single sign-on for our third-party LMS system by implementing a serverless web form using a
-  variety of Amazon Web Service tools that greatly reduced the process for clients. I developed CloudWatch canaries to
-  monitor the uptime of our production applications, updated and integrated repositories into SonarQube for code
-  analysis as the code enters our integration environment, and participated as a member of the deployment team for every
-  release.
-</p>
-<p>
-  As MediaPRO continues to enhance the applications, there is more work required to complete the automation framework;
-  however, I made significant progress in getting the core automation developed for the applications. Agile software
-  development and engineering require more than writing code, many components of engineering are required to make a
-  deployment successful. I gained valuable experience learning about the different facets to take into consideration
-  when working on an engineering team.
-</p>
-<p>
+    <p>
+      <strong>Contact:</strong> <a href="https://www.linkedin.com/in/jennamartin90">LinkedIn</a>
+    </p>
+    <p>
+      The primary goal of this Capstone project was to participate in infrastructure development and develop the core
+      automation framework for two web applications offered by MediaPRO. Before working for MediaPRO, the organization
+      primarily relied on black-box manual testing strategies and I was tasked with creating structure and standardizing the
+      test suite and then implementing the basic acceptance and regression tests into the automation development so that
+      staging testing and production validation could be performed more efficiently.
+    </p>
+    <p>
+      Using the software development lifecycle, I gathered requirements from our product and engineering department to
+      define the basic acceptance and regression test cases. In the planning stage, I mapped out the applications with
+      concept diagrams and decided to implement a dynamic approach to locate individual user interface objects, create
+      functions that test each object, and scripts that run the tests for each segment of the web application. This allows
+      the automation framework to be highly cohesive and loosely coupled so end-to-end testing can be performed or a user
+      can elect to run individual tests. In applying this design, I have located the majority of the elements within each
+      application and created functions to test these elements, which allowed me to concurrently develop and code the
+      framework.
+    </p>
+    <p>
+      Another facet of my Capstone project was to expand my skill sets to other crucial roles in engineering, including
+      Developer Operations (DevOps) and acting as a liaison for Support to escalate customer requests so that I could assist
+      or document potential bugs within our product line. As a DevOps engineer, I automated the process workflow for
+      customers requesting single sign-on for our third-party LMS system by implementing a serverless web form using a
+      variety of Amazon Web Service tools that greatly reduced the process for clients. I developed CloudWatch canaries to
+      monitor the uptime of our production applications, updated and integrated repositories into SonarQube for code
+      analysis as the code enters our integration environment, and participated as a member of the deployment team for every
+      release.
+    </p>
+    <p>
+      As MediaPRO continues to enhance the applications, there is more work required to complete the automation framework;
+      however, I made significant progress in getting the core automation developed for the applications. Agile software
+      development and engineering require more than writing code, many components of engineering are required to make a
+      deployment successful. I gained valuable experience learning about the different facets to take into consideration
+      when working on an engineering team.
+    </p>
+    <p>
 
-  </body>
+  </div>
+  <footer id="sticky-footer" class="py-4 hero-image2 text-white-50 mt-4">
+    <div class="container text-center col-sm-12 my-auto">
+      <p class="footer-text h2">Contact: pisan@uw.edu for more information</p>
+      <small style="font-size: 1.5vw;">Copyright &copy; T4G</small>
+    </div>
+  </footer>
+</body>
 
 </html>

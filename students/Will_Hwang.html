@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Will Hwang</title>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Will Hwang</title>
 
-</head>
+  </head>
+  <header class="hero-image">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/T4G-Logo.png" alt="T4G logo">
+      </a>
+      <!--toggler navbar for small size screens-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+      <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/capstone.html">Capstone</a></li>
+          <li class="nav-item"><a class="nav-link" href="/students.html">Students</a></li>
+          <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a> </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <div id="student-page" class="container">
 
 
-<h1>Software Development Internship at Agilysys</h1>
+    <h1>Software Development Internship at Agilysys</h1>
 
-<img src="../img-students/will-hwang.jpeg" alt="student picture" width="100" height="100" align="left"
-  style="vertical-align:middle;margin:5px">
+    <img src="../img-students/will-hwang.jpeg" alt="student picture" width="100" height="100" align="left"
+         style="vertical-align:middle;margin:5px">
 
-<h2>Will Hwang</h2>
+    <h2>Will Hwang</h2>
 
-<p>
-  <strong>Contact:</strong> <a href="https://www.linkedin.com/in/will-hwang">LinkedIn</a>
-</p>
+    <p>
+      <strong>Contact:</strong> <a href="https://www.linkedin.com/in/will-hwang">LinkedIn</a>
+    </p>
 
-<p>During my Internship at Agilysys, I worked in the information security and compliance team, where I developed my
-  skills in penetration testing, network analysis and incident response using multiple tools available. Agilysys is a
-  developer and marketer of enterprise software for the hospitality industry, and the information security team at
-  Agilysys is responsible for security of all its products.
-</p>
-<p>
-  My project was to learn and apply the skills in penetration testing on corporate kiosk application. With hacking
-  software available through in Kali-Linux, a linux distribution specifically for penetration tests, I conducted a
-  series of penetration tests that included network analysis, tampering communication, and conducting active attacks
-  using a number of tools. As a result, I was able to exploit one critical vulnerability caused by unencrypted HTTP
-  protocol in the application which the kiosk was running on. A number of unencrypted HTTP requests to certain API
-  endpoints were receiving plain-text response that contained the internal source code of the application.
-</p>
-<p>
-  This finding was formally reported to the development team for review and fix, as any leakage of company source code
-  can open up attack surface for further attacks in the application and can pose a serious threat to the organization as
-  a whole. As a result of the found vulnerability, the development team had initiated the process of encrypting all
-  traffic for communication. During this internship, I was able to gain hands-on experience in the field of information
-  security and penetration testing, which holds tremendous importance in software development.
-</p>
+    <p>During my Internship at Agilysys, I worked in the information security and compliance team, where I developed my
+      skills in penetration testing, network analysis and incident response using multiple tools available. Agilysys is a
+      developer and marketer of enterprise software for the hospitality industry, and the information security team at
+      Agilysys is responsible for security of all its products.
+    </p>
+    <p>
+      My project was to learn and apply the skills in penetration testing on corporate kiosk application. With hacking
+      software available through in Kali-Linux, a linux distribution specifically for penetration tests, I conducted a
+      series of penetration tests that included network analysis, tampering communication, and conducting active attacks
+      using a number of tools. As a result, I was able to exploit one critical vulnerability caused by unencrypted HTTP
+      protocol in the application which the kiosk was running on. A number of unencrypted HTTP requests to certain API
+      endpoints were receiving plain-text response that contained the internal source code of the application.
+    </p>
+    <p>
+      This finding was formally reported to the development team for review and fix, as any leakage of company source code
+      can open up attack surface for further attacks in the application and can pose a serious threat to the organization as
+      a whole. As a result of the found vulnerability, the development team had initiated the process of encrypting all
+      traffic for communication. During this internship, I was able to gain hands-on experience in the field of information
+      security and penetration testing, which holds tremendous importance in software development.
+    </p>
+  </div>
+  <footer id="sticky-footer" class="py-4 hero-image2 text-white-50 mt-4">
+    <div class="container text-center col-sm-12 my-auto">
+      <p class="footer-text h2">Contact: pisan@uw.edu for more information</p>
+      <small style="font-size: 1.5vw;">Copyright &copy; T4G</small>
+    </div>
+  </footer>
 </body>
 
 </html>

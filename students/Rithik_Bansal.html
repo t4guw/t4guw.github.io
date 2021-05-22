@@ -1,55 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Rithik Bansal</title>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Rithik Bansal</title>
 
-</head>
+  </head>
+  <header class="hero-image">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/T4G-Logo.png" alt="T4G logo">
+      </a>
+      <!--toggler navbar for small size screens-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+      <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/capstone.html">Capstone</a></li>
+          <li class="nav-item"><a class="nav-link" href="/students.html">Students</a></li>
+          <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a> </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <div id="student-page" class="container">
 
 
-<h1>GET Partners RESTful API for the Partner Integration Platform</h1>
+    <h1>GET Partners RESTful API for the Partner Integration Platform</h1>
 
-<img src="../img-students/rithik-bansal.jpeg" alt="student picture" width="100" height="100" align="left"
-  style="vertical-align:middle;margin:5px">
+    <img src="../img-students/rithik-bansal.jpeg" alt="student picture" width="100" height="100" align="left"
+         style="vertical-align:middle;margin:5px">
 
-<h2>Rithik Bansal</h2>
+    <h2>Rithik Bansal</h2>
 
-<p>
-  <strong>Contact:</strong> <a href="https://www.linkedin.com/in/rithikbansal05">LinkedIn</a>
-</p>
-<p>
-  The main aim of the project was to create an Application Programming Interface (API) which followed the
-  Representational State Tranfer (REST) architecture as its groundwork. The endpoint being used was the HTTP “GET”
-  endpoint. The GET Partners API provides the ability to get information for a collection of partner resources using the
-  ISO country code of the market where they work and a combination of query parameters. There was a total of 15 query
-  parameters which the consumer could use in any possible combination. The result included the information of all the
-  employees who fulfilled all the criteria passed in the request by the consumer. The request URL used by the users
-  looked like as follows:
-</p>
-<p>
-  https://serviceEndpoint/partners? where are passed in the following format:
-  /partners?lastName={value}&partnerId={value}....
-</p>
-<p>
-  The first step was to validate the consumer through the JWT (JSON Web Token) which came as part of the request to
-  ensure that the consumer is an authorized user. The step was critical to prevent personal identifiable information
-  falling into the hands of a malicious user. Second step was to validate each passed in query parameter and its
-  respective values for data consistency and sanity. Lastly, the query built was used to retrieve the information from
-  the NoSQL database hosted via Cosmos DB offering of Azure Cloud.
-</p>
-<p>
-  The cases where the consumer calls the API with “illegal” data and values, the API would then return a meaningful
-  message to the user which would guide them to rectify the error in their request. The message would be returned in
-  conjunction with its respective Http status code where 200 being for successful requests and 400 status codes being
-  for client-side error.
-</p>
-<p>
-  Testing was performed using the Junit testing library for unit testing and integration testing. As a developer, we aim
-  for our unit testing to have 95% code coverage. We also incorporated the use of logging libraries to help pinpoint the
-  error if it occurs and be used to monitor application health. The API was successfully built over the internship
-  duration with above par performance and efficiency.
-</p>
+    <p>
+      <strong>Contact:</strong> <a href="https://www.linkedin.com/in/rithikbansal05">LinkedIn</a>
+    </p>
+    <p>
+      The main aim of the project was to create an Application Programming Interface (API) which followed the
+      Representational State Tranfer (REST) architecture as its groundwork. The endpoint being used was the HTTP “GET”
+      endpoint. The GET Partners API provides the ability to get information for a collection of partner resources using the
+      ISO country code of the market where they work and a combination of query parameters. There was a total of 15 query
+      parameters which the consumer could use in any possible combination. The result included the information of all the
+      employees who fulfilled all the criteria passed in the request by the consumer. The request URL used by the users
+      looked like as follows:
+    </p>
+    <p>
+      https://serviceEndpoint/partners? where are passed in the following format:
+      /partners?lastName={value}&partnerId={value}....
+    </p>
+    <p>
+      The first step was to validate the consumer through the JWT (JSON Web Token) which came as part of the request to
+      ensure that the consumer is an authorized user. The step was critical to prevent personal identifiable information
+      falling into the hands of a malicious user. Second step was to validate each passed in query parameter and its
+      respective values for data consistency and sanity. Lastly, the query built was used to retrieve the information from
+      the NoSQL database hosted via Cosmos DB offering of Azure Cloud.
+    </p>
+    <p>
+      The cases where the consumer calls the API with “illegal” data and values, the API would then return a meaningful
+      message to the user which would guide them to rectify the error in their request. The message would be returned in
+      conjunction with its respective Http status code where 200 being for successful requests and 400 status codes being
+      for client-side error.
+    </p>
+    <p>
+      Testing was performed using the Junit testing library for unit testing and integration testing. As a developer, we aim
+      for our unit testing to have 95% code coverage. We also incorporated the use of logging libraries to help pinpoint the
+      error if it occurs and be used to monitor application health. The API was successfully built over the internship
+      duration with above par performance and efficiency.
+    </p>
+  </div>
+  <footer id="sticky-footer" class="py-4 hero-image2 text-white-50 mt-4">
+    <div class="container text-center col-sm-12 my-auto">
+      <p class="footer-text h2">Contact: pisan@uw.edu for more information</p>
+      <small style="font-size: 1.5vw;">Copyright &copy; T4G</small>
+    </div>
+  </footer>
 </body>
 
 </html>

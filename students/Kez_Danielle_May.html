@@ -1,58 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Kez Danielle May</title>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Kez Danielle May</title>
 
-</head>
+  </head>
+  <header class="hero-image">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/T4G-Logo.png" alt="T4G logo">
+      </a>
+      <!--toggler navbar for small size screens-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
 
+      </button>
+      <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/capstone.html">Capstone</a></li>
+          <li class="nav-item"><a class="nav-link" href="/students.html">Students</a></li>
+          <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a> </li>
+        </ul>
 
-<h1>Introducing Students to Structured Problem-Solving</h1>
+      </div>
+    </nav>
+  </header>
 
-<img src="../img-students/keziah-may.jpeg" alt="student picture" width="100" height="100" align="left"
-  style="vertical-align:middle;margin:5px">
-
-<h2>Kez Danielle May</h2>
-
-<p>
-  <strong>Contact:</strong> <a href="https://www.linkedin.com/in/keziahmay">LinkedIn</a>
-</p>
-
-<p>
-  The Computing and Software Systems (CSS) division of the University of Washington Bothell (UWB) takes 235 new
-  undergraduate students every year. With Microsoft, Google, Facebook, and Amazon nearby, graduates apply to some of the
-  biggest software companies in the world. This pressures UWB to provide an excellent CSS program, and they do. So why
-  do so many CSS students from UWB feel unprepared to interview for a job?
-</p>
-<p>
-  The CSS division offers a strong foundation of core classes and a variety of elective courses, but they do not teach
-  skills required to pass an interview. An interview for a Software Engineer has a behavioral and a technical portion.
-  During the technical portion of an interview, the candidate solves a programming problem in front of one or more
-  interviewers. The solution is written on a whiteboard and the candidate explains their thought process as they work.
-  The CSS program provides students with education on software tools like data structures and algorithms, but little
-  education about how to identify which of these tools are required to solve a given problem.
-</p>
-<p>
-  To test whether teaching a structured approach to problem solving helps students solve programming problems, an online
-  course was developed. Current tools for practice technical interviews are websites like Leetcode. They offer
-  programming problems and solutions. The online course took problems from Leetcode and explained different solutions to
-  the problems and why they work. After generating 50 lessons, 8 workshops were held for 3rd year CSS students.
-</p>
-<p>Many CSS undergraduates lack the skills required to start solving a problem. Though the course was designed to
-  explain solutions to known interview problems, interacting with students in the workshops revealed a different need.
-  When students were asked to solve problems, common pitfalls emerged. When those pitfalls were targeted in later
-  workshops, students showed an increased ability to answer questions about how to solve the problem. In a small survey
-  of seven participants, 85.7% found these workshops improved their performance in school and 71.4% believe it prepared
-  them for technical interviews.
-<p>
-  The data suggests that CSS students would benefit from a problem-solving course. There are 3 different options
-  suggested. One, integrate the problem-solving lessons into an existing core class. Two, create a CSS skills course
-  that teaches the fundamentals of problem solving. Three, continue with the format demonstrated in this research by
-  creating a workshop track.
-</p>
+  <div id="student-page" class="container">
 
 
+    <h1>Introducing Students to Structured Problem-Solving</h1>
+
+    <img src="../img-students/keziah-may.jpeg" alt="student picture" width="100" height="100" align="left"
+         style="vertical-align:middle;margin:5px">
+
+    <h2>Kez Danielle May</h2>
+
+    <p>
+      <strong>Contact:</strong> <a href="https://www.linkedin.com/in/keziahmay">LinkedIn</a>
+    </p>
+
+    <p>
+      The Computing and Software Systems (CSS) division of the University of Washington Bothell (UWB) takes 235 new
+      undergraduate students every year. With Microsoft, Google, Facebook, and Amazon nearby, graduates apply to some of the
+      biggest software companies in the world. This pressures UWB to provide an excellent CSS program, and they do. So why
+      do so many CSS students from UWB feel unprepared to interview for a job?
+    </p>
+    <p>
+      The CSS division offers a strong foundation of core classes and a variety of elective courses, but they do not teach
+      skills required to pass an interview. An interview for a Software Engineer has a behavioral and a technical portion.
+      During the technical portion of an interview, the candidate solves a programming problem in front of one or more
+      interviewers. The solution is written on a whiteboard and the candidate explains their thought process as they work.
+      The CSS program provides students with education on software tools like data structures and algorithms, but little
+      education about how to identify which of these tools are required to solve a given problem.
+    </p>
+    <p>
+      To test whether teaching a structured approach to problem solving helps students solve programming problems, an online
+      course was developed. Current tools for practice technical interviews are websites like Leetcode. They offer
+      programming problems and solutions. The online course took problems from Leetcode and explained different solutions to
+      the problems and why they work. After generating 50 lessons, 8 workshops were held for 3rd year CSS students.
+    </p>
+    <p>Many CSS undergraduates lack the skills required to start solving a problem. Though the course was designed to
+      explain solutions to known interview problems, interacting with students in the workshops revealed a different need.
+      When students were asked to solve problems, common pitfalls emerged. When those pitfalls were targeted in later
+      workshops, students showed an increased ability to answer questions about how to solve the problem. In a small survey
+      of seven participants, 85.7% found these workshops improved their performance in school and 71.4% believe it prepared
+      them for technical interviews.
+    <p>
+      The data suggests that CSS students would benefit from a problem-solving course. There are 3 different options
+      suggested. One, integrate the problem-solving lessons into an existing core class. Two, create a CSS skills course
+      that teaches the fundamentals of problem solving. Three, continue with the format demonstrated in this research by
+      creating a workshop track.
+    </p>
+
+
+  </div>
+  <footer id="sticky-footer" class="py-4 hero-image2 text-white-50 mt-4">
+    <div class="container text-center col-sm-12 my-auto">
+      <p class="footer-text h2">Contact: pisan@uw.edu for more information</p>
+      <small style="font-size: 1.5vw;">Copyright &copy; T4G</small>
+    </div>
+  </footer>
 </body>
 
 </html>

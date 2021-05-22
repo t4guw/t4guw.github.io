@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Leighlyn Ann Ha</title>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Leighlyn Ann Ha</title>
 
-</head>
+  </head>
+  <header class="hero-image">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/T4G-Logo.png" alt="T4G logo">
+      </a>
+      <!--toggler navbar for small size screens-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+      <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/capstone.html">Capstone</a></li>
+          <li class="nav-item"><a class="nav-link" href="/students.html">Students</a></li>
+          <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a> </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <div id="student-page" class="container">
 
 
-<h1>Enhancing Seattle’s SCADA System</h1>
+    <h1>Enhancing Seattle’s SCADA System</h1>
 
-<img src="../img-students/leighlyn-ha.jpeg" alt="student picture" width="100" height="100" align="left"
-  style="vertical-align:middle;margin:5px">
+    <img src="../img-students/leighlyn-ha.jpeg" alt="student picture" width="100" height="100" align="left"
+         style="vertical-align:middle;margin:5px">
 
-<h2>Leighlyn Ann Ha</h2>
+    <h2>Leighlyn Ann Ha</h2>
 
-<p>
-  <strong>Contact:</strong> <a href="https://www.linkedin.com/in/leighlyn-ha-b123011b7/">LinkedIn</a>
-</p>
-<p>
-  The main aim of this capstone project was to enhance the Seattle Public Utilities (SPU) Supervisory Control and Data
-  Acquisition (SCADA) system that collects and stores Washington environmental and Seattle utilities data for clients to
-  use. These are important for resource planning, performance analysis, monitoring, and maintenance of Seattle’s
-  infrastructure and utilities systems, weather and sewage flow modeling, and project planning.
-</p>
-<p>
-  Infrastructure, client, and developer requirements have changed since the SCADA system was first implemented. New data
-  sources needed to be incorporated and data sources no longer relevant to clients needed to be historicized (stop
-  pulling live data). The SCADA databases were in need of restructuring to accommodate these existing and new data
-  sources, using only SQL databases (with which the Wonderware SCADA system works best with). Data retrieval
-  applications needed to be refactored for better readability, maintainability, and to pull data for newly requested
-  data sources. A custom .NET application (called Zonar) was also requested by clients to analyze utility truck driver
-  performance.
-</p>
-<p>
-  My work involved completing many diverse tasks from of this major body of work. I worked with clients to historicize
-  Duwamish Tidal and Genesee CSO site tags, making changes to the Oracle and SQL databases. I created and modified .NET
-  code (such as creating and testing the USGS class) on the SDSP and Historian Operations .NET applications, gaining
-  experience working with these legacy systems and code. I also created a database and .NET application to pull and
-  store requested Zonar data, researching C# techniques for working with APIs and SQL databases. All changes were
-  thoroughly documented and communicated to other team members and clients.
-</p>
-<p>
-  Although this body of work is still ongoing, clients are now able to view data from requested USGS, NOAA, NOAA Tides,
-  and vendor-contracted FlowWorks data sources, enabling them to make better decisions for resource planning,
-  performance, operation, maintenance, and project planning. Data retrieval classes were simplified (derived from a base
-  class) and have unit tests. Selected data points for Duwamish Tidal and Genesee Combined Sewage Overflow sites were
-  historicized and approved by user acceptance testing. There are many more sites planned for historization, but this
-  work has been backlogged due to higher priority .NET and database work. The initial version of the Zonar application
-  .NET code, unit tests, and database have been completed, successfully pulling and storing data. Further unit testing
-  and construction of the Excel spreadsheet to display the data is in progress.
-</p>
+    <p>
+      <strong>Contact:</strong> <a href="https://www.linkedin.com/in/leighlyn-ha-b123011b7/">LinkedIn</a>
+    </p>
+    <p>
+      The main aim of this capstone project was to enhance the Seattle Public Utilities (SPU) Supervisory Control and Data
+      Acquisition (SCADA) system that collects and stores Washington environmental and Seattle utilities data for clients to
+      use. These are important for resource planning, performance analysis, monitoring, and maintenance of Seattle’s
+      infrastructure and utilities systems, weather and sewage flow modeling, and project planning.
+    </p>
+    <p>
+      Infrastructure, client, and developer requirements have changed since the SCADA system was first implemented. New data
+      sources needed to be incorporated and data sources no longer relevant to clients needed to be historicized (stop
+      pulling live data). The SCADA databases were in need of restructuring to accommodate these existing and new data
+      sources, using only SQL databases (with which the Wonderware SCADA system works best with). Data retrieval
+      applications needed to be refactored for better readability, maintainability, and to pull data for newly requested
+      data sources. A custom .NET application (called Zonar) was also requested by clients to analyze utility truck driver
+      performance.
+    </p>
+    <p>
+      My work involved completing many diverse tasks from of this major body of work. I worked with clients to historicize
+      Duwamish Tidal and Genesee CSO site tags, making changes to the Oracle and SQL databases. I created and modified .NET
+      code (such as creating and testing the USGS class) on the SDSP and Historian Operations .NET applications, gaining
+      experience working with these legacy systems and code. I also created a database and .NET application to pull and
+      store requested Zonar data, researching C# techniques for working with APIs and SQL databases. All changes were
+      thoroughly documented and communicated to other team members and clients.
+    </p>
+    <p>
+      Although this body of work is still ongoing, clients are now able to view data from requested USGS, NOAA, NOAA Tides,
+      and vendor-contracted FlowWorks data sources, enabling them to make better decisions for resource planning,
+      performance, operation, maintenance, and project planning. Data retrieval classes were simplified (derived from a base
+      class) and have unit tests. Selected data points for Duwamish Tidal and Genesee Combined Sewage Overflow sites were
+      historicized and approved by user acceptance testing. There are many more sites planned for historization, but this
+      work has been backlogged due to higher priority .NET and database work. The initial version of the Zonar application
+      .NET code, unit tests, and database have been completed, successfully pulling and storing data. Further unit testing
+      and construction of the Excel spreadsheet to display the data is in progress.
+    </p>
+  </div>
+  <footer id="sticky-footer" class="py-4 hero-image2 text-white-50 mt-4">
+    <div class="container text-center col-sm-12 my-auto">
+      <p class="footer-text h2">Contact: pisan@uw.edu for more information</p>
+      <small style="font-size: 1.5vw;">Copyright &copy; T4G</small>
+    </div>
+  </footer>
 </body>
 
 </html>
