@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Neil Wiborg</title>
+
+</head>
+<header class="hero-image">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">
+            <img src="/img/T4G-Logo.png" alt="T4G logo">
+        </a>
+        <!--toggler navbar for small size screens-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse navbar-dark" id="navbarSupportedContent" style="text-align: center">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/capstone.html">Capstone</a></li>
+                <li class="nav-item"><a class="nav-link" href="/students.html">Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a> </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+
+<div id="student-page" class="container">
+
+
+    <h1>Project Title</h1>
+
+    <img src="../img-students/neil-wiborg.jpeg" alt="student picture" width="100" height="100" align="left"
+        style="vertical-align:middle;margin:5px">
+
+    <h2>Neil Wiborg</h2>
+
+    <p>
+
+        For my capstone, I joined Amazon as a software development engineer intern. The team I was on was part of the
+        Amazon Web Services Elastic Compute Cloud (EC2) Control Plane. My team was the EC2 Cell Platform team, and one
+        of their responsibilities was provisioning new cells for EC2. Cells, simply put, are a way to increase the
+        scalability of EC2 and reduce the blast radius of outages.
+    </p>
+    <p>
+        The process that my team used to provision cells involved using a command-line interface (CLI) tool to generate
+        new cell data, then submit a code review (CR) to have some guarantee the data was accurate, and then use another
+        CLI tool to add the new cell to production. This approach was not ideal because a mistake could sneak through
+        the code review process and be pushed to production. My intern project was to create a web frontend that would
+        generate cell data through a simple form, allowing a one-click process to provision new cells.
+    </p>
+    <p>
+        In order to create a product that would satisfy all the requirements of my team, I met with multiple team
+        members to get an idea of what they were looking for. At Amazon there is a big focus on taking ownership of your
+        project, so when team members had conflicting ideas of what they wanted, it was up to me to decide what would be
+        best for my project.
+    </p>
+    <p>
+        My team had an agile workflow. Every day we would meet for standup to discuss what we have been working on, and
+        what blockers we had. A sprint lasted two weeks, and at the end of every sprint we would meet for a demo session
+        where we had an opportunity to show what we had been working on and to get feedback. I used this opportunity
+        every sprint to see if my project was on the right track.
+    </p>
+    <p>
+        There were multiple times during my internship that my manager was out sick. During these times, I took charge
+        and led our team through daily standup, as well as our sprint retro and demo session.
+    </p>
+    <p>
+        In order to develop my project, I had to learn full stack development. I wrote a React frontend, a Kotlin
+        backend that ran on AWS Lambda, and I added functionality to a database that was powered by AWS DynamoDB.
+    </p>
+    <p>
+        This experience at Amazon taught me the skills I need to become a software engineer. I learned how agile
+        development is done at a real tech company, and I was able to explore technologies that my classes at UW Bothell
+        did not cover.
+    </p>
+
+    <p>
+        <strong>Contact:</strong> <a
+            href="https://www.linkedin.com/in/https://www.linkedin.com/in/neil-wiborg/">LinkedIn</a>
+    </p>
+
+</div>
+<footer id="sticky-footer" class="py-4 hero-image2 text-white-50 mt-4">
+    <div class="container text-center col-sm-12 my-auto">
+        <p class="footer-text h2">Contact: pisan@uw.edu for more information</p>
+        <small style="font-size: 1.5vw;">Copyright &copy; T4G</small>
+    </div>
+</footer>
+</body>
+
+</html>
